@@ -34,7 +34,7 @@ public class BatchConfig {
     }
 
     @Bean
-    public Step imprimeOlaStep() throws Exception {
+    public Step imprimeOlaStep(Step imprimeOlaStep) throws Exception {
         return new StepBuilder("imprimeOlaStep", batchRepository.jobRepository())
                 .tasklet(imprimeOlaTasklet(null), batchRepository.transactionManager())
                 .build();
