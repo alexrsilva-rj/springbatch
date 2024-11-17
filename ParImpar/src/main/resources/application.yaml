@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ParImpar
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_batch
+    username: user
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
